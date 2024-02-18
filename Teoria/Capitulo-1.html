@@ -30,14 +30,30 @@
         display: inline-flex;
         justify-content: space-around;
       }
+      .cierre {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        margin: 50px;
+      }
+      .final {
+        justify-content: center;
+      }
       .parte,
       .final {
-        width: 40%;
+        width: 45%;
         margin: 10px;
         padding: 10px;
         border: 5px solid black;
         background-color: aliceblue;
         text-align: left;
+      }
+      img {
+        height: 300px;
+        width: 575px;
+        margin: 10px;
+        border: 5px solid white;
       }
     </style>
     <h1>Capitulo 1</h1>
@@ -48,7 +64,7 @@
       </div>
       <p>
         Un sitio web está formado por un conjunto de archivos que son accesibles
-        a través de la red y se representan por medio de un lenguaje. La pagina
+        a través de la red y se representan por medio de un lenguaje La pagina
         web es un conjunto de archivos dentro de un DOM.(Deo optimo
         maximo)(representación completamente orientada al objeto de la página
         web). <br />Entonces con los lenguajes "HTML" "CSS" "JavaScript" le
@@ -59,7 +75,7 @@
         La cual una vez creada y declarada, los motores de buscada posicionan
         nuestra pagina para poder ser encontra por lo internautas. Esto la hace
         a travez de un SEO. que lo vamos a explicar brevemente para que se
-        conozca que es. Pero no es el foco del proyecto.
+        conozca. Pero no es el foco del proyecto.
       </p>
       <div>
         <h3><u>SEO / OPTIMIZACION</u></h3>
@@ -68,27 +84,27 @@
         Para tener un buen SEO necesitamos tener un pagina correctamente
         estrutura, que no demore en su carga (parcial o completa) y tener
         referencias de busqueda, una descripcion de pagina, busqueda de palabras
-        o frases claves que describa nuestro sitio y tambien tener enlaces de entrada
+        o frases claves que describa nuestro sitio y tambien enlaces de entrada
         o salida.
       </p>
-      <b>Esto es para tener buena navegacion en nuestro sitio web.</b>
+      <b>Esto es para tener buena navegacion en nuestro sitio.</b>
       <ul>
         <li>
           <b>>> De entrada:</b> pueden ser los enlaces que usamos para generar
           una navegacion en nuestro sitio y que el usuario pueda ir y volver de
-          un punto al otro, sin salir de nuestra pagina.
+          un punto al otro sin salir de nuestra pagina.
         </li>
         <li>
           <b>>> De salida:</b> cuando hacemos referencia o damos cita de otras
           sitios web al nuestro. Para tener con tener mayor posicionamiento en
-          los motores busqueda. Que quiere decir ? Que si mencionamos sitios web
-          populares, vamos a aparecer en la busqueda, cuando busquen a esos
+          la busqueda. Que quiere decir ? Que si mencionamos sitios web
+          populares, vamos a aparecer en la busqueda cuando busquen a esos
           sitios. Ejemplo, le hacemos menciones a FACEBOOK.COM cuando los
           usuarios busques la palabras FACEBOOK vamos a aparecer en la busqueda.
         </li>
       </ul>
       <b
-        >"A lo largo de los capitulos vamos a ir tocando puntos para tener un
+        >"A lo largo de las intrucciones vamos a ir tocando puntos para tener un
         buen SEO"</b
       >
     </div>
@@ -117,37 +133,39 @@
       <div class="parte">
         <h3><u>Que son la etiquetas ?</u></h3>
         <p>
-          Son las que defininen la es estructura a travez de codigo, para
-          definir como debe se debe navegar en el sitio web.
+          Son las que defininen las la estructura a travez de codigo para
+          defeinir como debe se debe navegar en nuestro sitio web.
         </p>
-        Las etiquetas se diferencian en dos grandes grupos:
+        Las etiquetas se diferencias en dos
         <ul>
           <li>
-            <b>Con cierre:</b> Significa que hay etiquetas que necesitan cerrase para finalizar la estructura.
+            <b>Con cierre:</b> Significa que hay etiquetas que para cerrar la
+            estructura necesitan el cierre.
           </li>
           <li>
-            <b>Sin cierre:</b> Pero hay otras que podemos utilizarlas sin
+            <b>Sin cierre.</b> pero hay otras que podemos utilizarlas sin
             cerrarlas.
           </li>
         </ul>
       </div>
     </div>
     <h3><u>Tipo de etiquetas generales.</u></h3>
-    <p><b>(!DOCTYPE html)</b> > Etiqueta que no necesita cierre.</p>
+    <p>(!DOCTYPE html) > Etiqueta que no necesita cierre.</p>
     Definicion unirversal del tipo de texto que vamos a manegar en el sitio. Se
-    considera por regla general que debemos tenerla al iniciar cada proyecto. Con el
-    fin de decirle al motor de busqueda que tipo de estructura le vamos a dar.
+    considera por general que debemos tenerla al iniciar cada proyecto con el
+    fin de decirle al motor de buscada que tipo de estructura le vamos a dar.
     <br />
-    <p><b>(html lang="en") /html</b> > Etiqueta que necesita cierre.</p>
+    <p>(html lang="en") /html > Etiqueta que necesita cierre.</p>
     Para iniciar nuestro proyecyo lo hacemos con esta etiqueta, con la que
     tambien definimos el languaje general con el que vamos a programar. <br />
     <h3><u>HEAD y BODY</u></h3>
     <br />
-    Divide la parte del servidor con la parte del navegador.
+    Aca lo que hacemos es dividir la parte del servidos con la del navegador.
     Significa que la parte del HEAD la vemos y modificamos desde el editor. Y la
-    parte del BODY es la que ve el usuario y por la que puede navegar. Ambas etiquetas necesitan cierre. <br />
+    parte del BODY es la que ve el usuario y con el cual navega a traves de
+    ella. Ambas etiquetas necesitan cierre. <br />
+    <h3><u>Etiquetas HEAD</u></h3>
     <div class="cierre">
-      <h4><u>Etiquetas HEAD</u></h4>
       <div class="final">
         Definimos el titulo que se va encontrar en el motor de busqueda. >> Con
         la etiueta <b>title>Document /title > Etiqueta que necesita cierre. </b>
@@ -186,6 +204,7 @@
           </li>
         </ul>
       </div>
+      <img src="..\estructura.jpg" />
     </div>
     <br />
     <h3>Etiquetas para un mejor SEO.</h3>
@@ -193,15 +212,15 @@
       <b>
         <i
           >meta name="keywords" content="html, curso, junior, pagina web,
-          desarollo, programador"</i
+          desarollo, progrmador"</i
         >
       </b>
     </p>
-    Cada palabra que pongamos en esta etiqueta "meta name" Optimiza nuestro
+    Cada palabra que ponganmos en esta etiqueta "meta name" Optimiza nuestro
     SEO.
     <p>
       <b>
-        <i>meta name="description" content=" Descripcion de nuesta pagina"</i>
+        <i>meta name="description" content=" descripcion de nuesta pagina"</i>
       </b>
     </p>
     Aca escribimos una breve descripcion de nuestro sitio.
@@ -212,7 +231,7 @@
         ></b
       >
     </p>
-    Lo que podemos definir con esta es, identicar el nombre de quien diseña el
+    Lo que podemos definir con esta, es identicar el nombre de quien diseña el
     sito.
     <p>
       <b><i>meta name="copyright" content=" Nombre de la empresa"</i></b>
@@ -220,7 +239,7 @@
     Esta se utliza para declarar los derechos y uso de la empresa.
     <br /><br /><b>
       Despues tenemos dos etiquetas mas. Que son para la navegacion interna y
-      externa que puede tener el sitio web, se pueden utilizar en el HEAD como en el BODY. <br>Lo vamos a ver en la
+      externa que tambien se pueden utilizar en el body. Los vamos a ver en la
       parte de enlaces.</b
     ><br />
     Existen mas etiquetas para modificar la tipografia, el icono, las reglas de
@@ -228,6 +247,7 @@
     <h2>
       Con esto cerramos la parte inicial del head de HTML, seguimos el body.
     </h2>
+
     <a href="../index.html">Voler al incio</a>
   </body>
 </html>
