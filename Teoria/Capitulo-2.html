@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitulo-2</title>
+    <style>
+        body {
+            background-color: rgb(255, 160, 51);
+        }
+        .h1, .h2{
+            text-align: center;
+            background-color: burlywood;
+        }
+    .conteiner-a,.conteiner-b {
+        width: 90%;
+        display: inline flex;
+        justify-content: space-around;
+        margin:10px ;
+    }
+    .Listas, .Tablas {
+      border: solid 5px black;
+      background-color: #f0f0f0;
+      padding: 15px;
+    }
+    .Listas{
+        text-align: left;
+    }
+    .Tablas {
+        width:400px ;
+    }
+    .table-img{
+    border: solid 5px black;
+    }
+    .lista-img{
+    border: solid 5px black;
+    height: 353px;
+    width: 400px;
+    }
+    .titulos {
+    margin-left: 30%;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+    section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    article {
+      width: 100%;
+    }
+    .section {
+    border: solid 5px black;
+      width: 300px;
+      height: 260px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 class="h1">Capitulo 2</h1>
+    <h2 class="h2">Comenzamos con la parte del body</h2>
+
+    <h3><u>Body.</u></h3>
+    una vez definida la parte del body, comenzamos a impletar etiquetas basicas
+    para que nuestro sitio web empiece a tomar forma. En este aparte vamos a
+    definir varias etiquetas como
+    <span style="color: blue"
+      >"Titulo", "Subtitulos", "Parrafos", "Tablas", "Listas", "Section",
+      "Divisores", "Articulos", "Clases"</span
+    >
+    Una web se esta basada en bloques. Y cada bloque utiliza un espacio
+    determinado en el body. Hay etiquetas que ultizan todo el ancho del bloque y
+    otras que ultilizan la mitad del bloque. Que quiere decir ? Que si ponemos
+    una etiqueta que utiliza el ancho completo del bloque la proxima etiqueta va
+    a saltar hacia abajo para continuar. En cambio, una etiqueta que no utiliza
+    el ancho completo, la proxima etiqueta va a continuar al lado y no va a
+    saltar a la proxima linea desperdicuando espacio. <br />
+
+    <h3><i>Estas son algunas de las mas comunes.</i></h3>
+    <hr />
+    Antes seguir hacemos una breve explicacion, como dijimos en el
+    <a href="Capitulo-1.html"></a> una pagina para tener un buen <b>SEO</b> debe
+    estar bien estructurada. <br />
+    <ul>
+      <li class="Titulo">
+        <b>Titulos:</b> Tenemos varios tipos de titulos que varias su tamaño y
+        especificacion. Como los siguiente:
+        <ol>
+          <li>
+            <h1>
+              (H1): Titulo para comezar el sitio web. Se recomienda utilizar una
+              unica vez.
+            </h1>
+            <div class="titulos">
+              contiene <span style="color: red">(h1)</span>
+            </div>
+          </li>
+          <li>
+            <h2>(h2): Subtitulo. Se recomienda usar una o dos veces.</h2>
+            <div class="titulos">
+              contiene <span style="color: red">(h2)</span>
+            </div>
+          </li>
+          <li>
+            <h3>
+              (h3): Este tercer titulo, puede utilizarse varias veces. Como para
+              el comienzo de un parrafo, cita o texto.
+            </h3>
+            <div class="titulos">
+              contiene <span style="color: red">(h3)</span>
+            </div>
+          </li>
+          <li>
+            <h4>
+              (h4): Este cuarto titulo, como podemos ver es mas pequeño. Igual
+              que el (h5) (h6). Que no los mostramos pero son cada vez mas
+              chicos.
+            </h4>
+            <div class="titulos">
+              contiene <span style="color: red">(h4)</span>
+            </div>
+          </li>
+          <br />
+          Que se puede ver de fomar ordenada, se pueden utilizar estas etiquetas
+          y estructurar un sitio web.
+        </ol>
+      </li>
+      <li>
+        <p>
+          Etiqueta >> <b>(p)</b> Esta etiqueta presenta el inicio de un parrafo.
+        </p>
+      </li>
+      Ambas etiquetas ancho completo y necesitas su etiqueta de cierre para
+      finalizar la estrucuta. "h1 /h1" "p /p".
+    </ul>
+    <hr />
+    <section>
+      <article>
+        <h3><u>Etiqueta "section".</u></h3>
+        El elemento de HTML <i>(section)</i> representa una sección genérica
+        independiente de un documento, que no tiene un elemento semántico más
+        específico para representarla. Las secciones siempre deben tener un
+        título. Esta etiqueta no ocupa el ancho total por defecto, se ajusta al
+        ancho de su contenedor principal. El ancho de la sección dependerá de
+        las propiedades CSS aplicadas a ella o a sus contenedores. Tambien
+        funciona como contenedor, el cual puede tener varias etiquetas
+        <b>(article)</b>.
+      </article>
+      <article>
+        <h3><u>Etiqueta "article".</u></h3>
+        La etiqueta <i>(article)</i> en HTML se utiliza para definir una sección
+        de contenido independiente y autónoma en un documento. Es decir, el
+        contenido dentro de la etiqueta <i>(article)</i>
+        debería ser capaz de funcionar por sí mismo y tener un significado o
+        relevancia semántica incluso si se extrae y se presenta de manera
+        aislada.
+      </article>
+      <img class="section" src="../section.jpg">
+    </section>
+    <hr />
+    <h4><u>Etiquetas para modificar texto.</u></h4>
+    Etiqueta <b>(b)</b> Convierte la letra en <b>"negrita".</b> // Etiqueta
+    <b>(i)</b> Inclina la letra <i>"inclinada".</i> // Etiqueta
+    <b>(u)</b> Subraya el texto<u>"subrayado".</u> <br />
+    <p>Estas son las mas comunes de modificacion de texto.</p>
+    La siguiente es la de <b>(span)</b>. Lo que podemos hacer hacer junto a "CSS"
+    esta darle estilo o pintar una palabra del texto.
+    <span style="color: rgb(255, 119, 0)">"Esto es un span"</span><br />
+    "Todas estas etiquetas necesitas su etiqueta de cierre".
+    <hr />
+    <h4><u>Etiqueta de salto de linea y linea divisora.</u></h4>
+    <ul>
+      <li>
+        <b>(br)</b> Con esta etiqueta realizamos el salto de linea. No necesita
+        cierre.
+      </li>
+      <li>
+        <b>(hr)</b> Con esta otra, colocamos una linea divisora, como venimos
+        haciendo. No necesita cierre.
+      </li>
+    </ul>
+    <hr />
+    <h3><u>Tablas y listas.</u></h3>
+      Estas etiquetas son mas complejas. Ya que podemos crear tanto tablas o
+      como listas. <br>
+    <div class="conteiner-a">
+      <div class="Listas">
+        <h4>"<u>Listas.</u>"</h4>
+        <p>
+          La cual tenemos dos clases: <b>Lista ORDENENA</b> y
+          <b>Lista DESORDENADA</b>.
+        </p>
+        <div>
+          <ul>
+            <li>Uno.</li>
+            <li>Dos.</li>
+            <li>Tres.</li>
+            <li>Cuatro.</li>
+            <p>
+              Y las etiquetas son las siguientes:<b>(ul)(/ul)</b>para abrir y
+              cerrar la lista y <b>(li)(/li)</b> para cada atributo.
+            </p>
+          </ul>
+        </div>
+        <div>
+          <ol>
+            <li>Facundo.</li>
+            <li>Nicol.</li>
+            <li>Matias.</li>
+            <li>Cristian.</li>
+            <p>
+              Las etiquetas son: <b>(ol)(/ol)</b>para abrir y cerrar la lista y
+              <b>(li)(/li)</b> para cada atributo.
+            </p>
+          </ol>
+        </div>
+        </div>
+      <div class="Tablas">
+        <h4>"<u>Tabla.</u>"</h4>
+        <p>
+          Es un poco mas complejo que la anterior ya que tenemos mas etiquetas
+          que son :
+        </p>
+        <p><b>(table)(/table):</b>Define el inicio de la tabla.</p>
+        <p><b>(tr)(/tr):</b>Define cuantas filas.</p>
+        <p><b>(th)(/th):</b>Define las celdas del encabezado.</p>
+        <p><b>(tr)(/tr):</b>Para definir las filas del los datos.</p>
+        <p><b>(td)(/td):</b>Define las celdas de los datos.</p>
+        <b><u><i>Tabla armada.</i></b></u>
+        <br /><br />
+        <table>
+          <tr>
+            <th>Filas</th>
+            <th>Titulo uno</th>
+            <th>Titulo dos</th>
+            <th>Titulo tres</th>
+          </tr>
+          <tr>
+            <td>Dato fila uno</td>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+          </tr>
+          <tr>
+            <td>Dato fila dos</td>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+          </tr>
+          <tr>
+            <td>Dato fila tres</td>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+          </tr>
+        </table>
+      </div> 
+    </div>
+    <div class="conteiner-b">
+      <div >
+        <img class="lista-img" src="../lista.png">
+        </div>
+      <div>
+        <img class="table-img" src="../table.png">
+      </div>
+    </div>
+    <hr />
+    <div class="div">
+        <h3><u>Para cerrar este capitulo vamos a ver que son las clase y los div.</u></h3>
+        <div class="cajauno">
+            <h3><u>Etiqueta "class".</u></h3>
+            <P>Como si nombre lo indicada una etiqueta <b>(class)</b> se utliza para agrupar un conjunto de datos. Su funcion es agruparlos para luego poder llamarlos cuando necesitemos el dato.
+            La etiqueta <b>(class)</b> se utiliza mucho para combinarla con "CSS" y "JavaScript". Se le puede dar clases a cualquiera elemento.</P> 
+            A difencia de la otra etiqueta <b>(ID)</b> como su nombre lo indica su funcion es identificar un unico elemento.
+        </div>
+        <di class="cajados">
+            <h3><u>Etiqueta "div".</u></h3>
+            <P>La etiqueta <b>(div)</b> en HTML es un elemento de bloque que se utiliza para crear divisiones o contenedores genéricos en una página web. Es un contenedor sin significado semántico propio. No tiene un propósito específico o contenido predeterminado, por lo que su función principal es actuar como un bloque de construcción flexible.</P>
+        </div>
+    </div>
+    <h2 class="h2">Fin del capitulo continuaremos el proximo con mas estructuras.</h2>
+    <a href="../index.html">Voler al incio</a>
+  </body>
+</html>
